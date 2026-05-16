@@ -1,0 +1,51 @@
+{
+  "name": "dx-snakes",
+  "displayName": "DX Snakes",
+  "description": "Classic Nokia 1100-style Snake game inside VS Code, keyboard-first and bug-free.",
+  "version": "0.0.1",
+  "publisher": "sushilsalimath",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other",
+    "Fun"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dxSnakes.startGame",
+        "title": "DX Snakes: Start Game"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "package": "vsce package",
+    "vscode:prepublish": "npm run build"
+  },
+  "keywords": [
+    "game",
+    "snake",
+    "dx snakes",
+    "nokia",
+    "retro",
+    "1100",
+    "classic",
+    "keyboard",
+    "fun"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sushilsalimath12/dx_snake.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "@types/vscode": "^1.120.0",
+    "@vscode/vsce": "^3.9.1",
+    "typescript": "^6.0.3"
+  }
+}
