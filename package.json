@@ -37,6 +37,15 @@
     "keyboard",
     "fun"
   ],
+  "author": {
+    "name": "Sushil Salimath",
+    "email": "sushilrsalimath@gmail.com"
+  },
+  "homepage": "https://github.com/sushilsalimath12/dx_snake",
+  "bugs": {
+    "url": "https://github.com/sushilsalimath12/dx_snake/issues",
+    "email": "sushilrsalimath@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sushilsalimath12/dx_snake.git"

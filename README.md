@@ -2,6 +2,14 @@
 
 Classic Nokia 1100-inspired Snake game inside VS Code.
 
+## Author & Support
+
+- Author: **Sushil Salimath**
+- Point of contact: **Sushil Salimath**
+- Email: `sushilrsalimath@gmail.com`
+- Phone: `+1 236 883 4784`
+- Phone / WhatsApp: `+91 97382 2764`
+
 ## Gameplay
 
 - Eat food to grow and gain points
