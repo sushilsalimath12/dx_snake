@@ -1,55 +1,55 @@
 # DX Snakes
 
-Classic Nokia 1100-inspired Snake game inside VS Code.
+Retro keyboard-first Snake game for VS Code and Cursor.
 
-## Author & Support
+## Author and Support
 
 - Author: **Sushil Salimath**
-- Point of contact: **Sushil Salimath**
 - Email: `sushilrsalimath@gmail.com`
-- Phone: `+12368834784`
-- Phone / WhatsApp: `+919738227964`
+- Issues: `https://github.com/sushilsalimath12/dx_snake/issues`
 
 ## Gameplay
 
-- Eat food to grow and gain points
-- Snake speeds up as you score
-- Wall collision ends the game (classic challenge mode)
-- Game ends if snake hits its own body
-- Immediate 180-degree reverse turns are blocked
-- High score is saved locally
+- Eat food to grow and gain score.
+- Eat frog bonus prey for extra score and extra growth.
+- Speed increases as score increases.
+- One-time slow mode is available with a score penalty.
+- Game ends on wall collision or self-collision.
+- High score is saved locally in webview storage.
 
 ## Controls
 
-- Move: `Arrow Keys` or `W/A/S/D`
-- Pause: `P`
-- Restart: `R`
+- `S`: Start game (or click **Start Game** button)
+- `Up Arrow`: Turn left
+- `Down Arrow`: Turn right
+- `R`: Restart
+- `S` during gameplay: Slow once (`-10` score)
 
-Mouse use is minimal: click once to focus the game panel if needed.
+## Install
 
-## Run Locally
+### From Marketplace
 
-1. Open this folder in VS Code.
-2. Install dependencies:
+Search for `DX Snakes` in the Extensions panel and install.
+
+### From VSIX
+
+1. Build package:
+   - `npm run package`
+2. Install in Cursor/VS Code:
+   - `Extensions: Install from VSIX...`
+   - Select `dx-snakes-<version>.vsix`
+
+## Development
+
+1. Install dependencies:
    - `npm install`
-3. Build:
+2. Build:
    - `npm run build`
-4. Press `F5` to launch the Extension Development Host.
-5. Run command:
+3. Launch extension dev host:
+   - press `F5`
+4. Run command:
    - `DX Snakes: Start Game`
 
-## Package For Marketplace
+## Release Notes
 
-1. Update `publisher` in `package.json` to your Marketplace publisher ID.
-2. Keep extension display name as `DX Snakes`.
-3. (Optional) update version and icon.
-4. Build and package:
-   - `npm run package`
-5. A `.vsix` file will be created in this folder.
-6. Publish with VSCE (after login/token setup):
-   - `npx vsce publish`
-
-## Notes
-
-- Game state is kept while the panel is open (`retainContextWhenHidden`).
-- Designed intentionally simple, fast, and retro.
+See `CHANGELOG.md` for all versions.
