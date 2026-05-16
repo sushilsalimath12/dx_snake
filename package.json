@@ -1,7 +1,7 @@
 {
   "name": "dx-snakes",
   "displayName": "DX Snakes",
-  "description": "Classic Nokia 1100-style Snake game inside VS Code, keyboard-first and bug-free.",
+  "description": "Retro snake game for VS Code with keyboard-first controls.",
   "version": "0.2.3",
   "publisher": "sushilsalimath",
   "author": {
@@ -12,8 +12,7 @@
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other",
-    "Fun"
+    "Other"
   ],
   "activationEvents": [
     "onCommand:dxSnakes.startGame",
@@ -85,9 +84,7 @@
     "game",
     "snake",
     "dx snakes",
-    "nokia",
     "retro",
-    "1100",
     "classic",
     "keyboard",
     "fun"
