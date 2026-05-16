@@ -7,8 +7,8 @@ Classic Nokia 1100-inspired Snake game inside VS Code.
 - Author: **Sushil Salimath**
 - Point of contact: **Sushil Salimath**
 - Email: `sushilrsalimath@gmail.com`
-- Phone: `+1 236 883 4784`
-- Phone / WhatsApp: `+91 97382 2764`
+- Phone: `+12368834784`
+- Phone / WhatsApp: `+919738227964`
 
 ## Gameplay
 
