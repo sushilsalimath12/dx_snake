@@ -2,27 +2,82 @@
   "name": "dx-snakes",
   "displayName": "DX Snakes",
   "description": "Classic Nokia 1100-style Snake game inside VS Code, keyboard-first and bug-free.",
-  "version": "0.0.1",
+  "version": "0.2.3",
   "publisher": "sushilsalimath",
+  "author": {
+    "name": "Sushil Salimath",
+    "email": "sushilrsalimath@gmail.com"
+  },
   "engines": {
-    "vscode": "^1.120.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other",
     "Fun"
   ],
+  "activationEvents": [
+    "onCommand:dxSnakes.startGame",
+    "onCommand:dxSnakes.openGame",
+    "onCommand:dXSnakes.startGame",
+    "onCommand:dXSnakes.openGame",
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": true
+    }
+  },
   "contributes": {
     "commands": [
       {
         "command": "dxSnakes.startGame",
         "title": "DX Snakes: Start Game"
+      },
+      {
+        "command": "dxSnakes.openGame",
+        "title": "DX Snakes: Open Game (Fallback)"
+      },
+      {
+        "command": "dXSnakes.startGame",
+        "title": "DX Snakes: Start Game (Legacy Alias)"
+      },
+      {
+        "command": "dXSnakes.openGame",
+        "title": "DX Snakes: Open Game (Legacy Alias)"
       }
-    ]
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "dxSnakes.startGame",
+          "when": "true"
+        },
+        {
+          "command": "dxSnakes.openGame",
+          "when": "true"
+        },
+        {
+          "command": "dXSnakes.startGame",
+          "when": "true"
+        },
+        {
+          "command": "dXSnakes.openGame",
+          "when": "true"
+        }
+      ]
+    }
   },
   "scripts": {
     "build": "tsc -p .",
     "watch": "tsc -w -p .",
+    "test:game": "node scripts/game-rules-test.js",
     "package": "vsce package",
     "vscode:prepublish": "npm run build"
   },
@@ -37,23 +92,19 @@
     "keyboard",
     "fun"
   ],
-  "author": {
-    "name": "Sushil Salimath",
-    "email": "sushilrsalimath@gmail.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sushilsalimath12/dx_snake.git"
   },
   "homepage": "https://github.com/sushilsalimath12/dx_snake",
   "bugs": {
     "url": "https://github.com/sushilsalimath12/dx_snake/issues",
     "email": "sushilrsalimath@gmail.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sushilsalimath12/dx_snake.git"
-  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.8.0",
-    "@types/vscode": "^1.120.0",
+    "@types/vscode": "^1.85.0",
     "@vscode/vsce": "^3.9.1",
     "typescript": "^6.0.3"
   }
